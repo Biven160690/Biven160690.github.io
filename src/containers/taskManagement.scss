@@ -1,0 +1,53 @@
+  @use 'src/theme/global';
+
+  .task-management {
+    display: flex;
+    margin: 88px 20px 0px 72px;
+    padding-right: 10px;
+    
+    &__task-active {
+      width: 55%;
+      margin-right: 80px;
+    }
+
+    &__box {
+      @include global.position(center);   
+      width: 50px;
+      height: 24px;
+      background: global.$task-management-box-color;  
+      border-radius: 4px; 
+      margin-top: 10px;
+    }
+
+    &__total {
+      @include global.fontStyle(
+        global.$task-management-font-family,
+        global.$task-management-font-style,
+        global.$task-management-font-weight,
+        global.$task-management-font-size,
+        global.$task-management-line-height
+      ); 
+      color: global.$task-management-total-color;
+    }
+
+    &__task-completed {
+      margin-top: -20px;
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 832px) {
+    .task-management {
+      @include global.position(column);   
+      padding-right: 20px;
+      &__task-active {
+        width: 100%;
+      }
+
+      &__task-completed {
+        padding-top: 20px;    
+        width: 100%;
+      }
+    }
+  }
+ 

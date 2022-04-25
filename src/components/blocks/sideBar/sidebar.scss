@@ -1,0 +1,28 @@
+@use 'src/theme/global';
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  left: 0px;
+  top: 64px;
+  margin: 0;
+  padding: 0;
+  width: 52px;
+  background-color: global.$sidebar-background-color;
+}
+
+.sidebar-actions {
+  @include global.position(center); 
+  width: 100%;
+  height: 32px;
+  background: global.$sidebar-actions-color;
+  margin-top: 24px;
+
+  &__menu {
+    @include global.iconStyle(
+      16px, 
+      16px, 
+      global.$sidebar-menu-color); 
+  }
+}
