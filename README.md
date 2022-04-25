@@ -1,6 +1,6 @@
 # To-Do List
 
-I implemented the app was using technical task (you can see task in technicalTask folnet in project).
+I implemented the app using technical task (you can see the task in technicalTask folder in the project).
 
 ## Available Scripts
 
